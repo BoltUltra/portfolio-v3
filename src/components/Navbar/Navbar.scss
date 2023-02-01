@@ -113,8 +113,8 @@
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
 
     svg {
-      width: 35%;
-      height: 35%;
+      width: 35px;
+      height: 35px;
       color: var(--secondary-color);
       margin: 0.5rem 1rem;
     }
@@ -149,11 +149,11 @@
       }
     }
 
-    // @media screen and (min-width: 900px) {
-    //   display: none;
-    // }
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
   }
-  // @media screen and (min-width: 900px) {
-  //   display: none;
-  // }
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
 }
