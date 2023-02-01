@@ -10,7 +10,7 @@ const abouts = [
     imgUrl: images.about01,
   },
   {
-    title: "Web Design",
+    title: "Frontend Development",
     description: "I am a good web developer",
     imgUrl: images.about02,
   },
@@ -30,11 +30,9 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I Know That
-        <span>Good Design</span>
+        I Know That <span>Good Apps</span>
         <br />
-        means
-        <span>Good Business</span>
+        means <span>Good Business</span>
       </h2>
 
       <div className="app__profiles">
