@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { BsTwitter } from "react-icons/bs";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
@@ -42,7 +44,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Connect with me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -56,6 +58,35 @@ const Footer = () => {
           <a href="tel:+2349061858947" className="p-text">
             +234 906-185-8947
           </a>
+        </div>
+        <div className="app__footer-socials">
+          <div className="">
+            <a
+              href="https://twitter.com/dami0la"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsTwitter />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/BoltUltra"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/mayowa-sunusi-04689b15b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin />
+            </a>
+          </div>
         </div>
       </div>
       {!isFormSubmitted ? (
