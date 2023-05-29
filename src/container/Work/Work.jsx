@@ -22,7 +22,7 @@ const Work = () => {
   }, []);
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
-    setAnimateCard([{ y: 100, opacity: 0 }]);
+    setAnimateCard([{ y: 100, opacity: 0.5 }]);
 
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
@@ -41,7 +41,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {["UI/UX", "Web App", "Sveltekit", "Angular", "React JS", "All"].map(
+        {["UI/UX", "Web App", "Sveltekit", "Angular", "React JS", 'Next', "All"].map(
           (item, index) => (
             <div
               key={index}
@@ -66,7 +66,7 @@ const Work = () => {
             <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
               <motion.div
-                whileHover={{ opacity: [0, 1] }}
+                whileHover={{ opacity: [0.5, 1] }}
                 transition={{
                   duration: 0.25,
                   ease: "easeInOut",
